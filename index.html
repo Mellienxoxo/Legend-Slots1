@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html style="font-size:100%">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Legend SLots</title>
+    <link rel="icon" href="https://game.lucky2028.xyz/images/common/icon.png">
+    <link href="css/download/Index5.css" rel="stylesheet">
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/vue.min.js"></script>
+
+    <!-- Meta Pixel Code -->
+ 
+    <!-- <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=20798004c95695985&ev=PageView&noscript=1">
+    </noscript> -->
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <div class="con" id="con">
+        <div class="conTop">
+            <div class="icon"></div>
+            <div class="conText">
+                <p class="conText1">Legend SLots</p>
+                <p class="conText2">Jogo clássico atemporal</p>
+            </div>
+        </div>
+    
+        <div class="video_div">
+            <video class="vv" src="images/videos/" controls="controls"></video>
+        </div>
+        <div class="bg1"></div>
+        <div class="bg5"></div>
+        <div class="bg4"></div>
+        <div class="bg3"></div>
+        <div class="bg2"></div>
+        <div class="bg6"></div>
+        <div class="conFoot">
+            <div class="footIcon"></div>            
+            <div class="footText">
+                <p class="footText1">Legend SLots</p>
+                <p class="footText2">Retirada rápida</p>
+            </div>
+            <a class="gameDw" id="downloadbtn" v-on:click="recordDownload()"></a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: ".con",
+            data: {
+
+            },
+            methods: {
+                recordDownload:function(){
+                    download();
+                    fbq('track', 'StartTrial');
+                },
+                HowToInstall: function () {
+                    fbq('track', 'ViewContent');
+                }
+            }
+        })
+
+        $(document).ready(function () {
+            //var ww=screen.width;
+            var hh = screen.height;
+            var ww = document.body.clientWidth;
+            //var hh = document.body.clientHeight
+            var bili = ww / 576 * 100;
+
+            if (ww <= hh) {
+                if (bili > 187.5) {
+                    bili = 187.5;
+                }
+                else if (bili < 62.5) {
+                    bili = 62.5;
+                }
+                var aa = bili + "%";
+                $("html").css("font-size", aa);
+            }
+            else {
+
+                ww = ww < 1024 ? 1024 : ww;
+                bili = ww / 1800 * 100;
+
+                var aa = bili + "%";
+                $("html").css("font-size", aa);
+            }
+           download();
+
+        })
+
+        window.onresize = function () {
+            //var ww = screen.width;
+            var hh = screen.height;
+            var ww = document.body.clientWidth;
+            //var hh = document.body.clientHeight
+            var bili = ww / 576 * 100;
+            if (ww <= hh) {
+                if (bili > 187.5) {
+                    bili = 187.5;
+                }
+                else if (bili < 62.5) {
+                    bili = 62.5;
+                }
+                var aa = bili + "%";
+                $("html").css("font-size", aa);
+            }
+            else {
+
+                ww = ww < 1024 ? 1024 : ww;
+                bili = ww / 1800 * 100;
+
+                var aa = bili + "%";
+                $("html").css("font-size", aa);
+            }
+        }
+        function getQueryStr(str) {
+            if (!str) return {};
+            var obj = {};
+            var search = str.split('?')[1];
+            search = search.split('&')
+            for (var i = 0; i < search.length; i++) {
+                var item = search[i].split('=');
+                var key = item[0];
+                var value = item[1];
+                obj[key] = value
+            }
+            return obj;
+        }
+        function getQueryParams(query,key){
+            if(query[key]!=null){
+                return query[key]
+            }else{
+                return "";
+            }
+        }
+        function download(){
+            String.prototype.format = function() {
+                var formatted = this;
+                for( var arg in arguments ) {
+                    formatted = formatted.replace("{" + arg + "}", arguments[arg]);
+                }
+                return formatted;
+            };
+
+            var download_url='https://cdn.xjisjons.xyz/download/0.18.22.8/BwGame-625.apk';
+            var query = getQueryStr(location.search);
+            let ajtoken         =getQueryParams(query,"p0");
+            let campaign_name   =getQueryParams(query,"p1");
+            let campaign_id     =getQueryParams(query,"p2");
+            let adset_name      =getQueryParams(query,"p3");
+            let adset_id        =getQueryParams(query,"p4");
+            let ad_name         =getQueryParams(query,"p5");
+            let ad_id           =getQueryParams(query,"p6");
+            let fbclid          =getQueryParams(query,"fbclid");
+         //   let fbpid           =getQueryParams(query,"fbpid");
+            //let urlFromat="https://app.adjust.com/{0}?campaign={1}%20%28{2}%29&adgroup={3}%20%28{4}%29&creative={5}%20%28{6}%29&fbclid={7}&redirect={8}";
+            //let url=urlFromat.format(ajtoken,campaign_name,campaign_id,adset_name,adset_id,ad_name,ad_id,fbclid,download_url);
+            //console.log(url);
+            //window.location.href = url;
+
+            //let params="https://app.adjust.com/"+ajtoken+"?"+
+
+        }
+    //    
+    </script>
+    <script type="text/javascript">
+        
+    
+        //readyAdjust(code,campaign)
+          
+    </script>
+</body>
+</html>
+
+

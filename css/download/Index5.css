@@ -1,0 +1,74 @@
+* {
+    margin:0; padding:0;
+    font-size:1rem;
+}
+ul, li {
+    list-style:none;
+}
+.ml3 { margin-left:3rem;}
+
+
+body { width: 100%; background: #384fc3; }
+
+.con {
+    width:36rem;
+    height:68.95rem;
+    margin:0 auto;
+    background:url(../../images/index5/bg_.jpg) no-repeat;
+    background-size:100%;
+    position:relative;
+}
+
+.conTop {
+    width:36rem;
+    height:4.75rem;
+}
+
+
+.icon {
+    margin-top: 0.325rem;
+    margin-left: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    float: left;
+    border-radius: 0.5rem;
+    background-image: url(../../images/download28/icon2.png);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    background-position: left center;
+}
+
+
+.conText { width: 18rem; height: 4.55rem; margin-left: 0.5rem;  color: #e8ffff; float: left;padding-top:0.2rem;  }
+
+.conText1 { line-height: 2.5rem; text-align: left; color: #f6e8ff; font-size:2.2rem; }
+.conText2 { line-height: 2rem; text-align: left; color: #f6e8ff; font-size: 1.2rem; }
+
+.dwHelp { position: absolute; top: 37.1rem; right:1rem; color: #f07c56; font-size:1.2rem;}
+
+
+.video_div { width: 36rem; position: absolute; top: 37.5rem; left: 0;text-align:center; z-index:1; }
+.vv { width: 32.85rem;height:auto;left:10rem; margin: 0 auto; margin-bottom: 0; border: 0.55rem solid #572f9f; border-radius: 2rem; box-shadow: 0 0.2rem 0.6rem #1d0b44; z-index:0; }
+
+
+.conFoot { width: 36rem; height: 6.8rem; margin: 0 auto; background: #402669; position: fixed; bottom: 0; z-index: 99; }
+
+.footIcon { margin-top: 0.6rem; margin-left: 0.6rem; width: 5.6rem; height: 5.6rem; display: block; float: left; border-radius: 1rem; background-image: url(../../images/download28/icon2.png); 
+            background-repeat: no-repeat; background-size: 5.6rem; background-position: left center; }
+
+.footText { width: 18rem; height: 4.55rem; margin-left: 0.5rem; color: #e8ffff; float: left; padding-top: 1.5rem;  }
+
+.footText1 {  text-align: left; color: #f6e8ff; font-size: 1.8rem; }
+.footText2 { line-height: 2rem; text-align: left; color: #f6e8ff; font-size: 1.1rem; }
+
+
+.gameDw { width: 15.3rem; height: 4.2rem; background: url(../../images/index5/gameDw.png) no-repeat; background-size: 100%; position:absolute; top:1.3rem;right:1rem;  }
+
+.bg1 { width: 36rem; height: 22.65rem; margin: 0 auto; margin-top: 51.4rem; background: url(../../images/index5/bg1.jpg) no-repeat; background-size: 100%; }
+.bg2 { width: 36rem; height: 14.6rem; margin: 0 auto; margin-top: -0.1rem ;background: url(../../images/index5/bg2.jpg) no-repeat; background-size: 100%; }
+.bg3 { width: 36rem; height: 14.6rem; margin: 0 auto; background: url(../../images/index5/bg3.jpg) no-repeat; background-size: 100%; }
+.bg4 { width: 36rem; height: 14.6rem; margin: 0 auto; margin-top: -0.2rem;background: url(../../images/index5/bg4.jpg) no-repeat; background-size: 100%; }
+.bg5 { width: 36rem; height: 14.6rem; margin: 0 auto;margin-top: -0.1rem ; background: url(../../images/index5/bg5.jpg) no-repeat; background-size: 100%; }
+.bg6 { width: 36rem; height: 6rem; margin: 0 auto; background: #262881;}
+
